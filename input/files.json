@@ -1,0 +1,23 @@
+{
+    "destination": "./output",
+    "bundleName": "mega.bundle.js",
+    "files": [
+        {
+            "file": "./src/main.ts",
+            "content": "export * from './Horse'; export * from './Snake';",
+            "entry": true
+        },
+        {
+            "file": "./src/Animal.ts",
+            "content": "export class Animal { constructor(public name: string) { } move(meters: number) { console.log(this.name + ' moved ' + meters + 'm.'); } }"
+        },
+        {
+            "file": "./src/Snake.ts",
+            "content": "import { Animal } from './Animal'; export class Snake extends Animal { move() { console.log('Slithering...'); super.move(5); } }"
+        },
+        {
+            "file": "./src/Horse.ts",
+            "content": "import { Animal } from './Animal'; export class Horse extends Animal { move() { console.log('Galloping...'); super.move(45); } }"
+        }
+    ]
+}
