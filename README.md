@@ -1,6 +1,6 @@
 # Test_project
 Application with Node.js and TypeScript
 
-# Execude the following commands:
+# Execute the following commands:
 - npm i 
 - npm run build 
